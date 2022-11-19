@@ -13,8 +13,8 @@ package pong;
  * 
  * @author Grant Braught, edited by John MacCormick
  * 
- * @author (YOUR NAME HERE)
- * @version (PUT DATE HERE)
+ * @author William Goble
+ * @version November 18, 2022
  */
 public class PongBall {
 
@@ -22,7 +22,11 @@ public class PongBall {
     // Hint: You need fields to keep track of the horizontal 
     //       and vertical position of the ball as well as its 
     //       horizontal and vertical speed.
-  
+
+    private int horizPos = 0;
+    private int vertPos = 0;
+    private int horizSpeed = 0;
+    private int vertSpeed = 0;
     /**
      * Construct a new PongBall with the specified initial
      * positions and speeds.
@@ -35,6 +39,10 @@ public class PongBall {
     public PongBall(int initHorizPos, int initVertPos, 
                     int initHorizSpeed, int initVertSpeed) {
         // Initialize the fields of your PongBall here.
+        horizPos = initHorizPos;
+        vertPos = initVertPos;
+        horizSpeed = initHorizSpeed;
+        vertSpeed = initVertSpeed;
     }
 
     /**
