@@ -11,12 +11,16 @@ package pong;
  * 
  * @author Grant Braught, edited by John MacCormick
  * 
- * @author (YOUR NAME HERE)
- * @version (PUT DATE HERE)
+ * @author William Goble
+ * @version November 18, 2022
  */
 public class PongPaddle {
     
     // Define the field(s) for your PongPaddle here.
+    int top = 0;
+    int left = 0;
+    int width = 0;
+    int height = 0;
 
     /** 
      * Construct a new PongPaddle at the specified position with the
@@ -27,6 +31,10 @@ public class PongPaddle {
     public PongPaddle(int initTop, int initLeft, 
         int initWidth, int initHeight) {
         // Initialize the state of your PongPaddle here.
+        top = initTop;
+        left = initLeft;
+        width = initWidth;
+        height = initHeight;
     }
 
     /**
@@ -38,6 +46,7 @@ public class PongPaddle {
     public void moveUp(int distance) {
         // Add code here to change the vertical position of this
         // PongPaddle.
+        top = top - distance;
     }
 
     /**
@@ -49,6 +58,7 @@ public class PongPaddle {
     public void moveDown(int distance) {
          // Add code here to change the vertical position of this
          // PongPaddle.
+        top = top + distance;
     }
 
     /**
@@ -60,7 +70,7 @@ public class PongPaddle {
     public int getLeftEdgePos() {
         // Change this to return the actual horizontal position
         // of the left edge of this PongPaddle.
-        return 30;
+        return left;
     }
     
     /**
@@ -72,7 +82,7 @@ public class PongPaddle {
     public int getTopEdgePos() {
          // Change this to return the actual vertical position
         // of the top edge of this PongPaddle.
-        return 60;
+        return top;
     }
 
     /**
@@ -84,7 +94,7 @@ public class PongPaddle {
     public int getRightEdgePos() {
          // Change this to return the actual horizontal position
         // of the right edge of this PongPaddle.
-        return 40;
+        return left + width;
     }
 
     /**
@@ -96,7 +106,7 @@ public class PongPaddle {
     public int getBottomEdgePos() {
         // Change this to return the actual vertical position
         // of the bottom edge of this PongPaddle.  
-        return 120;
+        return top + height;
     }
 }
 

@@ -46,12 +46,6 @@ public class PongCanvas
         return true;
     }
 
-    /*
-    public boolean isFocusTraversable() {
-        return true;
-    }
-    */
-   
     /**
      * Return the width and height of this PongCanvas
      * as its preferred, minimum and maximum sizes.
