@@ -13,6 +13,16 @@ public class Candidate {
 	private String party;
 	private int votes;
 
+	public static void main(String[] args) {
+		Candidate candidate1 = new Candidate("Indira Patel", "Demopublican", 35400);
+		Candidate candidate2 = new Candidate("Joe Biden", "Democrat", 37000);
+		Candidate candidate3 = new Candidate("Donald Trump", "Republican", 2000);
+
+		System.out.println(candidate1.getName() + ": " + candidate1.getVotes());
+		System.out.println(candidate2.getName() + ": " + candidate2.getVotes());
+		System.out.println(candidate3.getName() + ": " + candidate3.getVotes());
+	}
+
 	/**
 	 * Construct a new candidate with the specified name, party and number of
 	 * votes.
