@@ -13,19 +13,21 @@ package pong;
  * 
  * @author Grant Braught, edited by John MacCormick
  * 
- * @author (YOUR NAME HERE)
- * @version (PUT DATE HERE)
+ * @author William Goble
+ * @version November 18, 2022
  */
 public class PongScore {
     
     // Define the field(s) for your PongScore objects here.
-    
+    private int score = 0;
+
     /**
      * Construct a new PongScore object with an initial 
      * score of zero points.
      */
     public PongScore() {
-        // Initialize the state of your PongScore object here.   
+        // Initialize the state of your PongScore object here.
+        score = 0;
     }
 
     /**
@@ -34,7 +36,7 @@ public class PongScore {
     public int getScore() {
         // Change this to return the actual score for this
         // PongScore object.    
-        return 0;
+        return score;
     }
 
     /**
@@ -48,6 +50,7 @@ public class PongScore {
         // Add code here to increase the score of this
         // PongScore object by the specified number of 
         // points.
+        score = score + points;
     }
 }
 
