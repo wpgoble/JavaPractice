@@ -55,6 +55,8 @@ public class PongBall {
      */
     public void move() {
         // Update the horizontal and vertical position of the PongBall here.
+        horizPos = horizPos + horizSpeed;
+        vertPos = vertPos + vertSpeed;
     }
 
     /**
@@ -68,6 +70,7 @@ public class PongBall {
      */
     public void horizBounce() {
         // Add your code here.
+        horizSpeed = -1 * horizSpeed;
     }
 
     /**
@@ -79,6 +82,7 @@ public class PongBall {
      */
     public void vertBounce() {
         // Add your code here.
+        vertSpeed = -1 * vertSpeed;
     }
 
     /**
@@ -89,7 +93,7 @@ public class PongBall {
     public int getHorizPos() {
         // Change this to return the actual horizontal position of
         // this PongBall.
-        return 150;
+        return horizPos;
     }
 
     /**
@@ -100,7 +104,7 @@ public class PongBall {
     public int getVertPos() {
          // Change this to return the actual vertical position of
          // this PongBall.
-        return 85;
+        return vertPos;
     }
     
     /**
@@ -111,7 +115,7 @@ public class PongBall {
     public int getHorizSpeed() {
          // Change this to return the actual horizontal speed of
         // this PongBall.
-        return 0;
+        return horizSpeed;
     }
     
     /**
@@ -122,6 +126,6 @@ public class PongBall {
     public int getVertSpeed() {    
         // Change this to return the actual vertical speed of
         // this PongBall.    
-        return 0;
+        return vertSpeed;
     }
 }
