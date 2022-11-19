@@ -1,0 +1,6 @@
+Species name here
+Species color here
+instructions for program here
+
+comment describing your creature here.  Be sure to leave a blank line between
+the last instruction and this comment.
